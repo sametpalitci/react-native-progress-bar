@@ -1,6 +1,8 @@
 # react-native-progress-bar
 Simple progress bar.
 
+`npm i @hyorax/react-native-progress-bar --save`
+
 Simple Use
 ```javascript
  <ProgressBar
