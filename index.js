@@ -17,7 +17,7 @@ const ProgressBar = (props) => {
         }]}>
             <View style={styles.mainProgressBarHeader}>
                 <Text style={styles.mainProgressBarHeaderText}>{props.title}</Text>
-                <Text style={styles.mainProgressBarHeaderText}>{props.percent}</Text>
+                <Text style={styles.mainProgressBarHeaderTextBold}>{props.percent}</Text>
             </View>
             <View style={[styles.mainProgressBarBody, {
                 width: props.width,
@@ -41,7 +41,6 @@ ProgressBar.defaultProps = {
 }
 const styles = StyleSheet.create({
     mainProgressBar: {
-
         display: 'flex',
         justifyContent: 'center'
     },
@@ -49,9 +48,14 @@ const styles = StyleSheet.create({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginBottom:'3%'
     },
     mainProgressBarHeaderText: {
+        color: '#fff',
+        fontSize: 20,
+    },
+    mainProgressBarHeaderTextBold:{
         color: '#fff',
         fontSize: 20,
         fontWeight: 'bold'
