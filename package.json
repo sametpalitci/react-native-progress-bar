@@ -1,12 +1,20 @@
 {
   "name": "react-native-progress-bar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Progress Bar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "hyorax",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sametpalitci/react-native-progress-bar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sametpalitci/react-native-progress-bar/issues"
+  },
+  "homepage": "https://github.com/sametpalitci/react-native-progress-bar#readme"
 }
