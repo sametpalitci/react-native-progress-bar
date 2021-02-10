@@ -4,6 +4,7 @@ import { Text, View, StyleSheet } from 'react-native';
 
 const DEFAULT_PERCENT = '80%';
 const DEFAULT_TITLE = "ProgressBar";
+const DEFAULT_TITLE_COLOR = "#fff";
 const DEFAULT_WIDTH = '100%';
 const DEFAULT_PROGRESS_HEIGHT = '40%';
 const DEFAULT_HEIGHT = '100%';
@@ -16,8 +17,8 @@ const ProgressBar = (props) => {
             height: props.height,
         }]}>
             <View style={styles.mainProgressBarHeader}>
-                <Text style={styles.mainProgressBarHeaderText}>{props.title}</Text>
-                <Text style={styles.mainProgressBarHeaderTextBold}>{props.percent}</Text>
+                <Text style={[styles.mainProgressBarHeaderText,{ color:props.title_color}]}>{props.title}</Text>
+                <Text style={[styles.mainProgressBarHeaderText,{ color:props.title_color}]}>{props.percent}</Text>
             </View>
             <View style={[styles.mainProgressBarBody, {
                 width: props.width,
@@ -33,6 +34,7 @@ const ProgressBar = (props) => {
 ProgressBar.defaultProps = {
     percent: DEFAULT_PERCENT,
     title: DEFAULT_TITLE,
+    title_color:DEFAULT_TITLE_COLOR,
     width: DEFAULT_WIDTH,
     height: DEFAULT_HEIGHT,
     progressHeight: DEFAULT_PROGRESS_HEIGHT,
@@ -56,7 +58,6 @@ const styles = StyleSheet.create({
         fontSize: 20,
     },
     mainProgressBarHeaderTextBold:{
-        color: '#fff',
         fontSize: 20,
         fontWeight: 'bold'
     },
